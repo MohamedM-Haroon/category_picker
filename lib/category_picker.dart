@@ -3,11 +3,11 @@ library category_picker;
 import 'package:category_picker/category_picker_item.dart';
 import 'package:flutter/material.dart';
 
-/// Input widget to let the user select something like a Category
+/// An input widget to handle selection of category like choices.
 ///
 /// Inspired by the YouTube recommendations bar on the home page
 class CategoryPicker extends StatefulWidget {
-  /// Input widget to let the user select something like a Category
+  /// An input widget to handle selection of category like choices.
   ///
   /// Inspired by the YouTube recommendations bar on the home page
   CategoryPicker({

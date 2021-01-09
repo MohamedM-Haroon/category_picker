@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: Center(
         child: CategoryPicker(
-          defaultSelected: 2,
+          defaultSelected: 0,
           onValueChanged: (value) {
             print(value.label);
           },
@@ -43,31 +43,7 @@ class _HomePageState extends State<HomePage> {
               value: "Test",
             ),
             CategoryPickerItem(
-              value: "Test",
-            ),
-            CategoryPickerItem(
-              value: "Test",
-            ),
-            CategoryPickerItem(
-              value: "Test",
-            ),
-            CategoryPickerItem(
-              value: "Test",
-            ),
-            CategoryPickerItem(
-              value: "Test",
-            ),
-            CategoryPickerItem(
-              value: "Test",
-            ),
-            CategoryPickerItem(
-              value: "Test",
-            ),
-            CategoryPickerItem(
-              value: "Test",
-            ),
-            CategoryPickerItem(
-              value: "Test",
+              value: "Test2",
             ),
           ],
         ),

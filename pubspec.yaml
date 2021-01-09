@@ -1,8 +1,7 @@
 name: category_picker
-description: A new Flutter package project.
-version: 0.0.1
-author:
-homepage:
+description: An input widget to handle selection of category like choices. Inspired by the YouTube recommendations bar on the home page.
+version: 1.0.0
+repository: https://github.com/ecrax/category_picker
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
