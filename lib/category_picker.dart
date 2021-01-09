@@ -133,7 +133,7 @@ class CategoryPicker extends StatefulWidget {
 }
 
 class _CategoryPickerState extends State<CategoryPicker> {
-  List<CategoryPickerItem> items = List<CategoryPickerItem>();
+  List<CategoryPickerItem> items = <CategoryPickerItem>[];
   CategoryPickerItem value;
 
   @override

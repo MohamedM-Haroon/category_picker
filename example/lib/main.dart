@@ -35,13 +35,13 @@ class _HomePageState extends State<HomePage> {
         child: CategoryPicker(
           items: [
             CategoryPickerItem(
-              value: "Test",
+              value: 'Test',
             ),
             CategoryPickerItem(
-              value: "Test2",
+              value: 'Test2',
             ),
             CategoryPickerItem(
-              value: "Test3",
+              value: 'Test3',
             ),
           ],
           defaultSelected: 0,
