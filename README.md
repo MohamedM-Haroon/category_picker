@@ -10,6 +10,8 @@ To use this widget simply add category_picker as a dependency to your project in
 
 ### Example
 
+(Barebone)
+
 ```dart
 import 'package:category_picker/category_picker.dart';
 import 'package:category_picker/category_picker_item.dart';
@@ -21,7 +23,6 @@ import 'package:category_picker/category_picker_item.dart';
     return Scaffold(
       body: Center(
         child: CategoryPicker(
-          defaultSelected: 0,
           onValueChanged: (value) {
             print(value.label);
           },
