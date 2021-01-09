@@ -23,9 +23,6 @@ import 'package:category_picker/category_picker_item.dart';
     return Scaffold(
       body: Center(
         child: CategoryPicker(
-          onValueChanged: (value) {
-            print(value.label);
-          },
           items: [
             CategoryPickerItem(
               value: "Test",
@@ -33,7 +30,13 @@ import 'package:category_picker/category_picker_item.dart';
             CategoryPickerItem(
               value: "Test2",
             ),
+            CategoryPickerItem(
+              value: "Test3",
+            ),
           ],
+          onValueChanged: (value) {
+            print(value.label);
+          },
         ),
       ),
     );

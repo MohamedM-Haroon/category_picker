@@ -1,6 +1,5 @@
 import 'package:category_picker/category_picker.dart';
 import 'package:category_picker/category_picker_item.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -34,10 +33,6 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: Center(
         child: CategoryPicker(
-          defaultSelected: 0,
-          onValueChanged: (value) {
-            print(value.label);
-          },
           items: [
             CategoryPickerItem(
               value: "Test",
@@ -45,7 +40,31 @@ class _HomePageState extends State<HomePage> {
             CategoryPickerItem(
               value: "Test2",
             ),
+            CategoryPickerItem(
+              value: "Test3",
+            ),
           ],
+          defaultSelected: 0,
+          onValueChanged: (value) {
+            print(value.label);
+          },
+          backgroundColor: Colors.transparent,
+          selectedItemColor: Theme.of(context).accentColor,
+          unselectedItemColor: Colors.transparent,
+          selectedItemBorderColor: Colors.transparent,
+          unselectedItemBorderColor: Colors.grey[800],
+          selectedItemTextDarkThemeColor: Colors.white,
+          selectedItemTextLightThemeColor: Colors.black,
+          unselectedItemTextDarkThemeColor: Colors.white,
+          unselectedItemTextLightThemeColor: Colors.white,
+          itemBorderRadius: BorderRadius.circular(30),
+          itemHeight: 32.0,
+          itemLabelFontSize: 16.0,
+          categoryPickerMargin: const EdgeInsets.symmetric(vertical: 11),
+          categoryPickerPadding:
+              const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+          itemMargin: const EdgeInsets.symmetric(horizontal: 4),
+          itemPadding: const EdgeInsets.symmetric(horizontal: 12),
         ),
       ),
     );
